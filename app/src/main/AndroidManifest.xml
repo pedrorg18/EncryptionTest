@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.pedroroig.encryptiontest">
+
+    <!-- for using jetpack security even if minSdk is lower. Later we will control that in code -->
+    <uses-sdk tools:overrideLibrary="androidx.security" />
 
     <application
         android:allowBackup="true"
